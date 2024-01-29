@@ -25,8 +25,8 @@
         display: flex;
     }
 
-    #hamburger-nav {
-        display: none;
+    #contact {
+        margin-top: 10rem;
     }
 
     #experience,
@@ -58,10 +58,19 @@
 }
 
 @media screen and (max-width: 600px) {
-    #contact,
+    #about,
     #profile {
-        height: 83vh;
-        margin-bottom: 0;
+        margin-bottom: 2rem; /* Adjust the margin as needed to bring the sections closer */
+    }
+
+    #contact,
+    #projects {
+        margin-bottom: 10rem; /* Adjust the margin as needed to bring the sections closer */
+    }
+    #contact {
+        max-width: 400px;
+        margin: 0 auto; /* Centers the contact section horizontally */
+        padding: 1rem;
     }
     article {
         font-size: 1rem;
@@ -70,6 +79,29 @@
     .contact-info-upper-container,
     .btn-container {
         flex-wrap: wrap;
+    }
+    .about-col-2 {
+        text-align: center; /* Center the "About Me" heading */
+    }
+    .tab-titles {
+        display: flex;
+        justify-content: center; /* Center the tab-titles */
+    }
+
+    .tab-links {
+        text-align: center; /* Center the text within each tab-link */
+        margin-right: 20px; /* Add margin for spacing between tab-links if needed */
+    }
+
+    .tab-links:last-child {
+        margin-right: 0; /* Remove margin for the last tab-link to avoid extra spacing */
+    }
+    .about-image-container {
+        margin: 0 auto; /* Center the image container */
+    }
+    .about-image-container img {
+        width: 100%; /* Make the image fill 95% of the width on mobile screens */
+        max-width: none; /* Remove the max-width constraint */
     }
     .contact-info-container {
         margin: 0;
@@ -104,6 +136,7 @@
         text-align: justify;
     }
     .details-container {
+        width: 100%;
         margin-bottom: 20px; /* Adjust the margin as needed for spacing between stacked projects */
     }
 }

@@ -91,7 +91,7 @@
         margin: 0 auto; /* Centers the image container */
     }
     .about-image-container img {
-        width: 80%; /* Make the image fill 80% of the width on mobile screens */
+        width: 100%; /* Make the image fill 80% of the width on mobile screens */
         max-width: none; /* Remove the max-width constraint */
         border-radius: 50%; /* Ensure the image is a circle (if applicable) */
         margin: 0 auto; /* Center the image horizontally */

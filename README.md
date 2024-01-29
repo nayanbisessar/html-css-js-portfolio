@@ -67,8 +67,6 @@ I am Nayan Bisessar, a third-year Computer Science major with a passion for full
 
 Feel free to reach out! Whether you have questions about my projects or potential collaboration opportunities, I am just a message away.
 
-![Contact Me](assets/contact-me.jpg)
-
 **Contact Form:**
 - Name
 - Email

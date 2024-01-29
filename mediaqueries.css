@@ -62,17 +62,6 @@
     #profile {
         margin-bottom: 2rem; /* Adjust the margin to bring the sections closer */
     }
-    .section_pic-container {
-        text-align: center; /* Center the content horizontally */
-        height: 375px; /* Adjust the height as needed */
-        line-height: 375px; /* Center vertically using line-height */
-    }
-
-    .section_pic-container img {
-        width: auto;
-        max-width: 100%; /* Set a maximum width if needed *//* Ensure the image is a circle */
-        vertical-align: middle; /* Align the image vertically in the middle */
-    }
     #contact,
     #projects {
         margin-bottom: 10rem; /* Adjust the margin to bring the sections closer */
@@ -106,12 +95,26 @@
     .tab-links:last-child {
         margin-right: 0; /* Remove margin for the last tab-link to make sure it is centered */
     }
-    .about-image-container {
-        margin: 0 auto; /* Centers the image container */
+    #profile {
+        margin-bottom: 2rem;
+        text-align: center; /* Center the content horizontally */
     }
-    .about-image-container img {
-        width: 100%; /* Make the image fill 95% of the width on mobile screens */
-        max-width: none; /* Remove the max-width constraint */
+    .section_text {
+        margin-top: -2rem; /* Adjusts the margin to move the section text upward */
+    }
+
+    .section_pic-container {
+        width: 80%; 
+        max-width: 400px; /* Set a maximum width */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+
+    .section_pic-container img {
+        width: 100%; /* Make the image fill its container */
+        height: 300px;
+        border-radius: 50%;
+        display: block; 
+        margin: 0 auto; /* Center the image horizontally */
     }
     .contact-info-container {
         margin: 0;
@@ -130,11 +133,6 @@
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
-    }
-    .section__pic-container {
-        width: auto;
-        height: 46vw;
-        justify-content: center;
     }
     .section__text__p2 {
         font-size: 1.25rem;

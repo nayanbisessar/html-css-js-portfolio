@@ -64,8 +64,8 @@
     }
     .section_pic-container {
         text-align: center; /* Center the content horizontally */
-        height: 350px; /* Adjust the height as needed */
-        line-height: 350px; /* Center vertically using line-height */
+        height: 375px; /* Adjust the height as needed */
+        line-height: 375px; /* Center vertically using line-height */
     }
 
     .section_pic-container img {

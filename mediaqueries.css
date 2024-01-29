@@ -20,7 +20,7 @@
         display: none;
     }
     
-    /* Show phone navigation icon */
+    /* Shows phone navigation icon */
     #phone-nav {
         display: flex;
     }
@@ -60,12 +60,12 @@
 @media screen and (max-width: 600px) {
     #about,
     #profile {
-        margin-bottom: 2rem; /* Adjust the margin as needed to bring the sections closer */
+        margin-bottom: 2rem; /* Adjust the margin to bring the sections closer */
     }
 
     #contact,
     #projects {
-        margin-bottom: 10rem; /* Adjust the margin as needed to bring the sections closer */
+        margin-bottom: 10rem; /* Adjust the margin to bring the sections closer */
     }
     #contact {
         max-width: 400px;
@@ -81,7 +81,7 @@
         flex-wrap: wrap;
     }
     .about-col-2 {
-        text-align: center; /* Center the "About Me" heading */
+        text-align: center; /* Centers the "About Me" heading */
     }
     .tab-titles {
         display: flex;
@@ -94,10 +94,10 @@
     }
 
     .tab-links:last-child {
-        margin-right: 0; /* Remove margin for the last tab-link to avoid extra spacing */
+        margin-right: 0; /* Remove margin for the last tab-link to make sure it is centered */
     }
     .about-image-container {
-        margin: 0 auto; /* Center the image container */
+        margin: 0 auto; /* Centers the image container */
     }
     .about-image-container img {
         width: 100%; /* Make the image fill 95% of the width on mobile screens */
@@ -137,6 +137,6 @@
     }
     .details-container {
         width: 100%;
-        margin-bottom: 20px; /* Adjust the margin as needed for spacing between stacked projects */
+        margin-bottom: 20px; /* Adjusts the margin for spacing between stacked projects */
     }
 }

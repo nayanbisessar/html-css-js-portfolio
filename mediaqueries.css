@@ -64,8 +64,8 @@
     }
     .section_pic-container {
         text-align: center; /* Center the content horizontally */
-        height: auto; /* Adjust the height as needed */
-        line-height: auto; /* Center vertically using line-height */
+        height: 350px; /* Adjust the height as needed */
+        line-height: 350px; /* Center vertically using line-height */
     }
 
     .section_pic-container img {
@@ -73,7 +73,6 @@
         max-width: 100%; /* Set a maximum width if needed */
         border-radius: 50%; /* Ensure the image is a circle */
         vertical-align: middle; /* Align the image vertically in the middle */
-        margin-left: -5px;
     }
     #contact,
     #projects {

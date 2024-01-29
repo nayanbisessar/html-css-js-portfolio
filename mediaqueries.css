@@ -1,53 +1,109 @@
+/* mediaqueries.css */
+
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+        height: fit-content;
+    }
+}
+
 @media screen and (max-width: 1200px) {
+    /* Adjust styles for the desktop navigation to remain hidden */
     #desktop-nav {
         display: none;
     }
-
+    
+    /* Show phone navigation icon */
     #phone-nav {
         display: flex;
     }
 
-    #projects, #contact {
-        margin-top: 35rem; /* AdjustS the margin-top value to prevent overlay */
+    #hamburger-nav {
+        display: none;
+    }
+
+    #experience,
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+    #profile,
+    .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section,
+    .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers {
+        margin-top: 0;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .project-details-container {
-        flex-direction: column; /* Stacks project boxes vertically on mobile screens */
+@media screen and (max-width: 600px) {
+    #contact,
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
     }
-
+    article {
+        font-size: 1rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container {
+        text-align: justify;
+    }
     .details-container {
-        width: 100%; /* Full width for each project box on smaller screens */
-    }
-
-    .about-col-1 {
-        width: 100%; /* Make sure the about column takes full width on mobile screens */
-        order: 2; /* Changes order of stacked boxes */
-    }
-
-    .about-col-1 img {
-        width: 100%; /* Make sure the image of is on mobile screens */
-        max-width: 100%; /* Ensures the image doesn't exceed its original size */
-        height: auto;
-        border-radius: 15px; /* Add border radius to the image */
-    }
-
-    #about .section-container {
-        flex-direction: column-reverse;
-    }
-
-    #contact {
-        flex-direction: column-reverse;
-    }
-
-    .about-col-2 {
-        flex-basis: 100%;
-    }
-
-    .about-image-container img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 15px; /* Add border radius to the image */
+        margin-bottom: 20px; /* Adjust the margin as needed for spacing between stacked projects */
     }
 }

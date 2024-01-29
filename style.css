@@ -321,6 +321,7 @@ section {
     border: #2b475c 0.1rem solid;
     text-align: center;
     box-sizing: border-box;
+    width: 100%;
 }
 
 #projects {

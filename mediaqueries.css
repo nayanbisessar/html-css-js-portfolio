@@ -1,0 +1,53 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display:none;
+    }
+    #phone-nav {
+        display: flex;
+    }
+    #projects {
+        margin-top: 35rem; /* Adjust the margin-top value to prevent overlay */
+    }
+    #contact {
+        margin-top: 35rem; /* Adjust the margin-top value to prevent overlay */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .project-details-container {
+        flex-direction: column; /* Stacks project boxes vertically on smaller screens */
+    }
+
+    .details-container {
+        width: 100%; /* Full width for each project box on smaller screens */
+    }
+    .about-col-1 {
+        width: 100%; /* Make sure the about column takes full width on smaller screens */
+        order: 2; /* Change the order to 2 to move it below the project details */
+    }
+
+    .about-col-1 img {
+        width: 100%; /* Make sure the image of you is responsive on smaller screens */
+        max-width: 100%; /* Ensure the image doesn't exceed its original size */
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #about .section-container {
+        flex-direction: column-reverse;
+    }
+
+    #contact{
+        flex-direction: column-reverse;
+    }
+
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}

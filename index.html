@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><img src="assets/logo1.png" alt="Nayan Bisessar"></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id = "phone-nav">
+        <div class="logo"><img src="assets/logo1.png" alt="Nayan Bisessar"></div>
+        <div class="phone-menu">
+            <div class="phone-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div> 
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="/assets/profile_pic1.png" alt="Nayan Bisessar Profile Pic">
+        </div>
+        <div class="section_text">
+            <p class="section_text_1">Hello, I'm</p>
+            <h1 class="name_title">Nayan Bisessar</h1>
+            <p class="section_text_2">Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-1" onclick="window.open('./assets/Resume(Nayan Bisessar).pdf')">
+                Resume</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Linkedin Link" class="icon"
+                onclick="location.href= 'https://linkedin.com/in/nayan-bisessar'">
+                <img src="./assets/github.png" alt="Github Link" class="icon"
+                onclick="location.href= 'https://github.com/nayanbisessar'">
+            </div>
+        </div>
+        
+    </section>
+    <section id="about">
+        <!----------about--------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-2">
+                        <h1> About Me</h1>
+                        <p>Hello, my name is Nayan Bisessar, a passionate third-year Computer Science
+                            major actively seeking a Co-Op opportunity. My primary interest lies in the
+                             dynamic field of full stack development, where I thrive on creating seamless
+                              and innovative solutions. As a dedicated learner, I am excited about exploring
+                               new challenges and expanding my knowledge base. I am eagerly anticipating the opportunities
+                                that lie ahead and am committed to contributing my skills to meaningful projects.</p>
+        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                            <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                            <p class="tab-links" onclick="opentab('extracurriculars', event)" >Extracurriculars</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Java, Python, Javascript, HTML, CSS, SQL</li>
+                                <li><span>Software</span><br>Visual Studio, Eclipse, MySQL, VirtualBox, IntelliJ, Wireshark, Spyder</li>
+                                <li><span>Systems</span><br>Windows, Linux</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - 2025</span><br>Bachelor of Science in Computer Science at Wentworth Institute of Technology</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="extracurriculars">
+                            <ul>
+                                <li><span>2023 - Present</span><br>Member of SHPE (Society of Hispanic Professional Engineers)</li>
+                                <li><span>2021 - Present</span><br>Regular gym-goer and fitness enthusiast</li>  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-col-2">
+                        <div class="about-image-container">
+                            <img src="assets/pic_of_me_2.JPG" alt="Nayan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <!---------PROJECTS---------->
+        <h1 class="title">Projects</h1>
+        <div class="project-details-container">
+            <!----------CONTAINER 1----------->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Portfolio Project" class="project-img" style="max-width: 100%; height: auto;">
+                </div>
+                <h2 class="project-sub-title project-title">Portfolio Project</h2>
+                <div class="btn-container">
+                    <button class="btn btn-1 project-btn" onclick="location.href='https://github.com/nayanbisessar/html-css-js-portfolio'">
+                        Github
+                    </button>
+                </div>
+            </div>
+
+            <!----------CONTAINER 2----------->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Second Project" class="project-img" style="max-width: 100%; height: auto;">
+                </div>
+                <h2 class="project-sub-title project-title">Tic-Tac-Toe Project</h2>
+                <div class="btn-container">
+                    <button class="btn btn-1 project-btn" onclick="location.href='https://github.com/nayanbisessar/Tic-Tac-Toe/blob/main/Tic-Tac-Toe/JFX_Project/src/jfx_package/mainclass.java'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------CONTACT------------->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form name="submit-to-google-sheet" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="Message" rows="4" required></textarea>
+            <button class="btn btn-1 project-btn">Send Message</button>           
+        </form>
+        <span id="msg"></span>
+    </section>
+    <footer>
+        <p>&copy; 2024 NSB. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+<!----------CODE FROM jamiewilson on Github------------>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyGSMpmgcnGvjpKamZyTkgRn8Ii2aAoGo3iaj2Bl-nJ8fx6VwFFU84i1rnz-CBfubw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

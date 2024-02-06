@@ -10,7 +10,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background: #000000;
+    background: #ffffff;
 }
 
 html{
@@ -18,7 +18,7 @@ html{
 }
 
 p{
-    color: #ffffff;
+    color: #000000;
 }
 
 /* TRANSITION */
@@ -46,7 +46,7 @@ nav{
 }
 
 a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -56,7 +56,7 @@ a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #24ab6e;
+    background: #C53678;
     position: absolute;
     left: 0;
     bottom: 0px;
@@ -94,7 +94,7 @@ a:hover::after{
 .phone-icon span {
     width: 100%;
     height: 2px;
-    background-color: #24ab6e;
+    background-color: #FF5841;
     transition: all 0.3 ease-in-out;
 }
 
@@ -102,7 +102,7 @@ a:hover::after{
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #000000;
+    background-color: #ffffff;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -114,7 +114,7 @@ a:hover::after{
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -182,7 +182,7 @@ section {
     align-self: center;
 }
 .name_title {
-    color: #24ab6e;
+    color: #FF5841;
 }
 .section_text p {
     font-weight: 600;
@@ -224,7 +224,7 @@ section {
 }
 
 .btn-1 {
-    color: #24ab6e;
+    color: #C53678;
     cursor: pointer;
 }
 
@@ -232,11 +232,11 @@ section {
 
 #about{
     padding: 80px 0;
-    color: #ffffff;
+    color: #000000;
     padding-bottom: 4rem;
 }
 .about-col-2 h1 {
-    color: #ffffff;
+    color: #FF5841;
     font-size: 35px;
 }
 .row{
@@ -269,7 +269,7 @@ section {
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #24ab6e;
+    color: #FF5841;
 }
 .tab-titles{
     display: flex;
@@ -286,7 +286,7 @@ section {
     content: '';
     width: 0;
     height: 3px;
-    background: #24ab6e;
+    background: #C53678;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -306,7 +306,7 @@ section {
 }
 
 .tab-contents ul li span{
-    color: #24ab6e;
+    color: #FF5841;
     font-size: 16px;
 }
 
@@ -320,7 +320,7 @@ section {
     width: calc(48% - 2.5rem);
     background-color: #ffffff;
     margin-bottom: 20px;
-    border: #24ab6e 0.1rem solid;
+    border: #C53678 0.1rem solid;
     text-align: center;
     box-sizing: border-box;
     border-radius: 10px;
@@ -330,7 +330,7 @@ section {
 #projects {
     position: relative;
     margin-top: 5.5rem;
-    color: #24ab6e ;
+    color: #FF5841 ;
 }
 
 .project-sub-title {
@@ -371,7 +371,7 @@ article {
     margin-top: 5rem;
     padding: 1rem;
     background-color: #fff;
-    border: #24ab6e 0.1rem solid;
+    border: #C53678 0.1rem solid;
     border-radius: 10px;
     text-align: center;
     max-width: 600px;
@@ -403,7 +403,7 @@ article {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
-    border: 1px solid #24ab6e;
+    border: 1px solid #C53678;
     border-radius: 5px;
     resize: none; /* Disable resizing */
     display: block; /* Ensure the textarea is a block-level element */
@@ -411,7 +411,7 @@ article {
 }
 
 #contact button {
-    background-color: #24ab6e;
+    background-color: #C53678;
     color: #fff;
     cursor: pointer;
     font-weight: 600;
@@ -425,13 +425,13 @@ article {
 }
 
 #msg{
-    color: #24ab6e;
+    color: #C53678;
     display: block;
 }
 
 footer {
-    background-color: #000000;
-    color: #fff;
+    background-color: #fff;
+    color: #000000;
     text-align: center;
     padding: 1rem;
     position: fixed;

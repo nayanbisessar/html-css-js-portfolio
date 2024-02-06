@@ -1,5 +1,4 @@
 /* mediaqueries.css */
-
 @media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
@@ -57,7 +56,56 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container {
+        text-align: justify;
+    }
     #about,
     #profile {
         margin-bottom: 2rem; /* Adjust the margin to bring the sections closer */
@@ -94,28 +142,7 @@
 
     .tab-links:last-child {
         margin-right: 0; /* Remove margin for the last tab-link to make sure it is centered */
-    }
-    #profile {
-        margin-bottom: 2rem;
-        text-align: center; /* Center the content horizontally */
-    }
-    .section_text {
-        margin-top: -2rem; /* Adjusts the margin to move the section text upward */
-    }
-
-    .section_pic-container {
-        width: 80%; 
-        max-width: 400px; /* Set a maximum width */
-        margin: 0 auto; /* Center the container horizontally */
-    }
-
-    .section_pic-container img {
-        width: 100%; /* Make the image fill its container */
-        height: 300px;
-        border-radius: 50%;
-        display: block; 
-        margin: 0 auto; /* Center the image horizontally */
-    }
+    } 
     .contact-info-container {
         margin: 0;
     }
@@ -134,9 +161,6 @@
         gap: 0.5rem;
         text-align: center;
     }
-    .section__text__p2 {
-        font-size: 1.25rem;
-    }
     .title {
         font-size: 2rem;
     }
@@ -146,5 +170,8 @@
     .details-container {
         width: 100%;
         margin-bottom: 20px; /* Adjusts the margin for spacing between stacked projects */
+    }
+    #footer {
+        text-align: justify;
     }
 }

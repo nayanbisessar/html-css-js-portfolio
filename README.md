@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio! This website serves as a showcase of my skills, projects, and experiences as a Computer Science student. Feel free to explore and get to know more about me.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/64a5e9c5-9664-42db-b097-d8a1ea3b73d0/deploy-status)](https://app.netlify.com/sites/resilient-bublanina-670588/deploys)
+
 ## Table of Contents
 
 - [Navigation](#navigation)
